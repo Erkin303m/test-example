@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Text, ScrollView, View, TouchableOpacity, TextInput } from 'react-native'
+import { Text, ScrollView, View, TouchableOpacity, TextInput, Image } from 'react-native'
 import styles from './style'
 import Feather from 'react-native-vector-icons/Feather';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -7,7 +7,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 
 
-const Stores = () => {
+const Stores = ({navigation}) => {
     const [data, setData] = useState([
         {
             "productName": "SB Van Hanh Mall",
@@ -155,17 +155,28 @@ const Stores = () => {
 
             <View style={styles.mainView2}>
                 <View style={styles.viewStyle}>
-                    {data.map((value, index) => {
-                        return <View key={index} >
-                            <TouchableOpacity style={styles.view2}>
-                                <FontAwesome5 name="store" style={styles.icon} />
-                                <View style={styles.bottomWordView}>
-                                    <Text style={styles.wordsView3}>{value.productName}</Text>
-                                    <Text style={styles.wordsViewMini}>{value.address}</Text>
-                                </View>
-                            </TouchableOpacity>
+                    {(data.length > 0) ? (
+                        data.map((value, index) => {
+                            return <View key={index} >
+                                <TouchableOpacity style={styles.view2}  onPress={()=>navigation.navigate("storeDetails")} >
+                                    <FontAwesome5 name="store" style={styles.icon} />
+                                    <View style={styles.bottomWordView}>
+                                        <Text style={styles.wordsView3}>{value.productName}</Text>
+                                        <Text style={styles.wordsViewMini}>{value.address}</Text>
+                                    </View>
+                                </TouchableOpacity>
+                            </View>
+                        })
+                    ) : (
+                        <View >
+                            <View style={{flexDirection:"row", justifyContent:"center", marginTop:25}}>
+                                <Image source={require("../../assets/pictures/error.png")} style={styles.picturePoint} />
+                            </View>
+                            <Text style={{fontWeight:"bold", textAlign:"center"}}>Sorry, we nearly found it!</Text>
+                            <Text style={{textAlign:"center"}}>Please try again, better luck next time</Text>
                         </View>
-                    })}
+
+                    )}
                 </View>
             </View>
         </ScrollView>

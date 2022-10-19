@@ -3,8 +3,7 @@ import { Text, View, ScrollView, TouchableOpacity, Header } from 'react-native'
 import styles from './style'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import Entypo from 'react-native-vector-icons/Entypo';
-import Feather from 'react-native-vector-icons/Feather';
+
 
 
 const Delivery = ({ navigation }) => {

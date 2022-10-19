@@ -5,17 +5,28 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Feather from 'react-native-vector-icons/Feather';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
+import { useNavigation } from '@react-navigation/native';
 
 
-const Delivery = ({ route, navigation }) => {
+const Delivery = ({ route }) => {
     const { state } = route.params;
     console.log(state);
+    const navigation = useNavigation();
+
     return (
         <ScrollView style={styles.mainScrollView}>
             <View style={styles.mainView3}>
                 <View style={styles.topView}>
                     <View style={styles.topView}>
-                        <View style={{ paddingStart: 15 }}>
+                        <View style={{ paddingStart: 15, flexDirection: "row" }}>
+                            <TouchableOpacity onPress={() => {
+                                navigation.navigate('Order')
+                            }}>
+                                <MaterialIcons style={{ marginEnd: 10, fontWeight: "bold", fontSize: 25 }} name='keyboard-arrow-left' />
+                            </TouchableOpacity>
+
                             <Text style={styles.topWord}>Order {state.orderID}</Text>
                         </View>
                     </View>

@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        width: "86%"
+        width: "88%"
     },
     mainScrollView: {
         backgroundColor: "#F5F5F5"

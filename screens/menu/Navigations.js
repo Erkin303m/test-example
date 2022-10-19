@@ -5,6 +5,7 @@ import Home from '../Home/Home';
 import TabMenu from "./TabMenu"
 import OrderDetails from "../Order/OrderDetails"
 import OrderHistory from '../Order/OrderHistory';
+import StoreDetails from '../Stores/StoreDetails';
 
 
 const Stack = createNativeStackNavigator();
@@ -17,6 +18,7 @@ const Navoigation = () => {
                 <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
                 <Stack.Screen name="orderDetails" component={OrderDetails} options={{ headerShown: false, headerBackTitleVisible: false }} />
                 <Stack.Screen name="orderHistory" component={OrderHistory} />
+                <Stack.Screen name="storeDetails" component={StoreDetails} />
             </Stack.Navigator>
         </NavigationContainer>
     )

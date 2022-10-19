@@ -107,10 +107,12 @@ const styles = StyleSheet.create({
         marginTop: 2,
     },
     bottomViewStore: {
-        width: "60%"
+        width: "60%",
+        paddingTop:15
     },
     bottomViewStore2: {
         width: "60%",
+        paddingEnd:20
     },
     buttonOutline: {
         borderWidth: 2,
@@ -147,6 +149,13 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderBottomRightRadius: 8,
         borderBottomLeftRadius: 8
+    },
+    storeMiniView3:{
+        backgroundColor: "white",
+        padding: 10,
+        flexDirection: "row",
+        borderRadius:8,
+        marginTop:10
     },
     viewStyle: {
         flexDirection: "row",

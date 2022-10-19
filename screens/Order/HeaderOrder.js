@@ -3,10 +3,12 @@ import { Text, View, TouchableOpacity } from 'react-native'
 import Entypo from 'react-native-vector-icons/Entypo';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-
+import { useNavigation } from '@react-navigation/native';
 import styles from './style';
 
-const HeaderOrder = ({ navigation }) => {
+const HeaderOrder = () => {
+    const navigation = useNavigation(); 
+
     return (
         <View>
             <View style={styles.topView}>
@@ -31,9 +33,7 @@ const HeaderOrder = ({ navigation }) => {
                         <TouchableOpacity>
                             <Feather name="x" color={"black"} />
                         </TouchableOpacity>
-
                     </View>
-
                 </View>
             </View>
         </View>
