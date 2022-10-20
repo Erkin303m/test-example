@@ -84,20 +84,20 @@ const Home = () => {
                 </Swiper>
 
                 <View style={styles.storeMiniView}>
-                    <View style={styles.storeMini2}>
+                    <TouchableOpacity style={styles.storeMini2}>
                         <View style={styles.viewPicture}>
                             <Image source={require("./../../assets/pictures/Image.png")} style={styles.picture2} />
                         </View>
                         <Text style={styles.wordsView}>Store pickup</Text>
                         <Text style={styles.wordsView2}>Best quality</Text>
-                    </View>
-                    <View style={styles.storeMini}>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.storeMini}>
                         <View style={styles.viewPicture}>
                             <Image source={require("./../../assets/pictures/Image2.png")} style={styles.picture2} />
                         </View>
                         <Text style={styles.wordsView}>Delivery</Text>
                         <Text style={styles.wordsView2}>Always on time</Text>
-                    </View>
+                    </TouchableOpacity>
                 </View>
 
                 <View style={styles.storeMiniView3}>
@@ -114,14 +114,15 @@ const Home = () => {
 
 
                 <View style={styles.storeMiniView2}>
-                    <View style={styles.buttonOutline}>
+                    <TouchableOpacity style={styles.buttonOutline}>
                         <MaterialIcons name="date-range" color={"#1A94FF"} style={{ marginEnd: 5, fontSize: 18 }} />
                         <Text style={styles.buttonWord}>Reserve a table</Text>
-                    </View>
-                    <View style={styles.buttonOutline2}>
+                    </TouchableOpacity>
 
+                    <TouchableOpacity style={styles.buttonOutline2}>
                         <Text style={styles.buttonWord}>My reservations</Text>
-                    </View>
+                    </TouchableOpacity>
+
                 </View>
 
 

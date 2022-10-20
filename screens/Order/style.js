@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        width: "88%"
+        width: "85%"
     },
     mainScrollView: {
         backgroundColor: "#F5F5F5"
@@ -163,6 +163,10 @@ const styles = StyleSheet.create({
         paddingTop: 5,
         paddingBottom: 5
     },
+    backButton:{
+        flexDirection:"row",
+        alignItems:"center"
+    }
 })
 
 

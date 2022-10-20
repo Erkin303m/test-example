@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     },
     topRightView: {
         padding: 5,
-        backgroundColor: "rgba(0, 0, 0, 0.05)",
+        backgroundColor: "rgba(0, 0, 0, 0.2)",
         borderRadius: 20,
         height: 30,
         flexDirection: "row",
@@ -64,9 +64,9 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         padding: 10,
         marginTop: 15,
-        flexDirection:"row",
-        justifyContent:"space-between",
-        alignItems:"center"
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center"
     },
     qrCodeView2: {
         flexDirection: "row",

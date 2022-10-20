@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
     },
     wordsViewMini: {
         fontSize: 12,
-        color: "#808089"
+        color: "#808089",
+        marginTop:7
     },
     storeMiniView: {
         backgroundColor: "white",
@@ -212,7 +213,97 @@ const styles = StyleSheet.create({
         alignItems:"center",
         borderBottomLeftRadius:10,
         borderBottomRightRadius:10
-    }
+    },
+    mainView3: {
+        paddingTop: 70,
+        paddingStart: 15,
+        paddingEnd: 15,
+        backgroundColor: "white",
+        paddingBottom: 10
+    },
+    mainView2: {
+        paddingStart: 15,
+        paddingEnd: 15,
+        paddingBottom: 10
+    },
+    topWord: {
+        fontSize: 18,
+        fontWeight: "bold"
+    },
+    topWordBold: {
+        fontWeight: "bold",
+        fontSize: 14
+    },
+    topRightView: {
+        padding: 5,
+        backgroundColor: "rgba(0, 0, 0, 0.05)",
+        borderRadius: 20,
+        height: 30,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    iconBorder: {
+        borderEndWidth: 1,
+        borderColor: "gray",
+        paddingStart: 10,
+        paddingEnd: 10,
+    },
+    iconBorder2: {
+        paddingStart: 10,
+        paddingEnd: 10,
+    },
+    pictureCoffeeMan: {
+        width: "100%"
+    },
+    pictureBottomView: {
+        backgroundColor: "white",
+        borderRadius: 10,
+        padding: 10,
+        paddingStart: 15,
+        paddingEnd: 15,
+        marginTop: -60,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center"
+    },
+    pictureBottomView2: {
+        backgroundColor: "white",
+        borderRadius: 10,
+        padding: 10,
+        paddingStart: 15,
+        paddingEnd: 15,
+        
+    },
+    pictureBottomView3: {
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center",
+        paddingBottom:20,
+        paddingTop:20
+        
+    },
+    wordButton: {
+        backgroundColor: "#1A94FF",
+        color: "white",
+        borderRadius: 20,
+        paddingStart: 18,
+        paddingEnd: 18,
+        paddingTop: 5,
+        paddingBottom: 5
+    },
+    backButton:{
+        backgroundColor:"rgba(0, 0, 0, 0.05)",
+        borderRadius:20,
+        margin:0,
+        padding:0,
+        width:30,
+        height:30,
+        flexDirection:"row",
+        justifyContent:"center",
+        alignItems:"center"
+
+    },
 
 
 })

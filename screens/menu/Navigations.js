@@ -17,8 +17,8 @@ const Navoigation = () => {
                 <Stack.Screen name="Tab" component={TabMenu} options={{ headerShown: false }} />
                 <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
                 <Stack.Screen name="orderDetails" component={OrderDetails} options={{ headerShown: false, headerBackTitleVisible: false }} />
-                <Stack.Screen name="orderHistory" component={OrderHistory} />
-                <Stack.Screen name="storeDetails" component={StoreDetails} />
+                <Stack.Screen name="orderHistory" component={OrderHistory} options={{ headerShown: false }}/>
+                <Stack.Screen name="storeDetails" component={StoreDetails} options={{ headerShown: false, headerBackTitleVisible: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

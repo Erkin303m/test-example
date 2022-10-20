@@ -13,7 +13,7 @@ const HeaderOrder = () => {
         <View>
             <View style={styles.topView}>
                 <View style={styles.topView}>
-                    <View style={{ paddingStart: 15 }}>
+                    <View style={{ paddingStart: 10 }}>
                         <Text style={styles.topWord}>Order</Text>
                     </View>
                 </View>

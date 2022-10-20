@@ -120,7 +120,7 @@ const Stores = ({navigation}) => {
                 <View style={styles.topView}>
                     <View style={styles.topView}>
                         <View style={{ paddingStart: 15 }}>
-                            <Text style={styles.topWord}>Store</Text>
+                            <Text style={styles.topWord}>Stores</Text>
                         </View>
                     </View>
                     <View style={styles.topRightView}>
